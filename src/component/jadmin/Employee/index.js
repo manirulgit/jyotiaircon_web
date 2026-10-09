@@ -5,7 +5,7 @@ import Nabvar from '../navbar';
 import './Employee.css';
 import EmployeeService from '../../../services/employeeService';
 
-const EMPLOYEE_API_URL = 'https://jyotiairconditioning.in/websercice/api/employes';
+const API_BASE_URL = 'https://jyotiairconditioning.in/websercice/api';
 
 async function requestEmployeeApi(path, options = {}) {
     const accessToken = sessionStorage.getItem('access_token');
@@ -13,7 +13,7 @@ async function requestEmployeeApi(path, options = {}) {
         throw new Error('Your session has expired. Please log in again.');
     }
 
-    const response = await fetch(`${EMPLOYEE_API_URL}${path}`, {
+    const response = await fetch(`${API_BASE_URL}/employes${path}`, {
         ...options,
         headers: {
             'Accept': 'application/json',
@@ -107,7 +107,7 @@ function Employee() {
                 limit: String(size),
                 offset: String((page - 1) * size)
             });
-            const response = await fetch(`https://jyotiairconditioning.in/websercice/api/employes?${query}`, {
+            const response = await fetch(`${API_BASE_URL}/employes?${query}`, {
                 headers: {
                     'Accept': 'application/json',
                     'Authorization': `Bearer ${accessToken}`
@@ -441,7 +441,7 @@ function Employee() {
                 throw new Error('Your session has expired. Please log in again.');
             }
 
-            const response = await fetch('https://jyotiairconditioning.in/websercice/api/employes', {
+            const response = await fetch(`${API_BASE_URL}/employes`, {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
