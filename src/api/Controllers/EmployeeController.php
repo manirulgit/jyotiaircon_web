@@ -32,7 +32,7 @@ class EmployeeController {
             'total_count' => $totalRecords,
             'page' => $page,
             'size' => $size
-        ], 200, 'Employees fetched successfully.');
+        ], 200, 'Employees fetched successfully here.');
     }
 
     public function getById(int $id): void {
