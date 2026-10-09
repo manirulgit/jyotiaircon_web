@@ -1,0 +1,2 @@
+[06-Sep-2026 13:08:03 UTC] PHP Fatal error:  strict_types declaration must be the very first statement in the script in /home/nhe096vgw8cv/public_html/websercice/api/Config/Database.php on line 6
+[06-Sep-2026 13:08:16 UTC] PHP Fatal error:  strict_types declaration must be the very first statement in the script in /home/nhe096vgw8cv/public_html/websercice/api/Config/Database.php on line 6

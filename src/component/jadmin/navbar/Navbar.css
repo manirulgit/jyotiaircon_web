@@ -1,0 +1,13 @@
+
+.iconstyle {
+  font-size: 20px;
+}
+
+.navmenubar{
+  
+  height: 75px;
+  border-radius: 2px;
+  border-width: 2px;
+  border-color: red;
+  background-color: red;
+}

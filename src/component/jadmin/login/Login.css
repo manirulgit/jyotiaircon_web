@@ -1,0 +1,26 @@
+.login-box {
+	width:90%;
+	right:5%;
+	left:5%;
+	position:inherit;
+	}
+    .login-box-body {
+        background:#fff;
+        padding:10px;
+        border-top:0;
+        color:#666; 
+        border-radius:6px;
+        }
+    .login-box-hd {
+        margin:0 0 15px; 
+        background:#268cb9;
+        border-radius:3px;
+        text-align:center; 
+        color:#ffffff; 
+        font-size:24px;
+        padding:3px 0;
+        }
+    
+    .login-box-body .video-box-body .form-control-feedback, .register-box-body .participant-box-body {
+        color:#777;
+        }

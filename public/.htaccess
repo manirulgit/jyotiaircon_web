@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+# Send all non-file, non-directory requests to the React index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
