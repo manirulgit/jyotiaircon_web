@@ -37,7 +37,7 @@ class EmployeeController {
 
     public function getById(int $id): void {
         if ($id < 1) {
-            Response::json(null, 400, 'A valid employee ID is required for validation.');
+            Response::json(null, 400, 'A valid employees ID is required for validation.');
         }
 
         $stmt = $this->db->prepare(
